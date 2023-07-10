@@ -11,15 +11,13 @@ public class Playlist {
     }
 
     // Removes songs by the given parameter
-    public int removeSong(int num) {
+    public void removeSong(int num) {
         numberOfSongs -= num;
-        return numberOfSongs;
     }
 
     // Increases song number by the given parameter
-    public int addSong(int num) {
+    public void addSong(int num) {
         numberOfSongs += num;
-        return numberOfSongs;
     }
 
     // Returns a string containing the name, number of songs, and rating
@@ -28,8 +26,7 @@ public class Playlist {
     }
 
     // Change the rating of the playlist by the given parameter
-    public double changeRating(double rating) {
+    public void changeRating(double rating) {
         this.rating += rating;
-        return this.rating;
     }
 }
